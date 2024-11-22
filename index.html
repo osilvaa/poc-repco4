@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repco POC</title>
+  <script>
+    // Block Internet Explorer embedding
+    if (window.top !== window.self) {
+      var ua = window.navigator.userAgent;
+      var isIE = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+
+      if (isIE) {
+        document.body.innerHTML = '<h1>Embedding in Internet Explorer is not allowed!</h1>';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to Repco POC</h1>
+  <h2>Embedding Allowed in Modern Browsers</h2>
+</body>
+</html>
